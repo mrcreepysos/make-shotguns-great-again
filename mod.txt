@@ -2,13 +2,13 @@
   	"name" : "Make Shotguns Great Again",
 	"description" : "unfuck shotguns, also revert drf",
 	"author" : "smiley's friend",
-	"contact" : "smfr#4414","
+	"contact" : "smfr#4414",
 	"version" : "1.0",
 	"blt_version" : 2,
 	"updates" : [{
 		"identifier" : "msga",
 		"host" : { "meta" : "https://raw.githubusercontent.com/mrcreepysos/msga/main/meta.json" }
-	}]
+	}],
 	
 	"hooks": [
 		{"hook_id": "lib/units/weapons/raycastweaponbase", "script_path": "lua/raycastweaponbase.lua"},
