@@ -1,3 +1,18 @@
+function ShotgunBase:setup_default()
+	self._damage_near = tweak_data.weapon[self._name_id].damage_near
+	self._damage_far = tweak_data.weapon[self._name_id].damage_far
+	self._rays = tweak_data.weapon[self._name_id].rays or self._ammo_data and self._ammo_data.rays or 12
+	self._range = self._damage_far
+
+	if tweak_data.weapon[self._name_id].use_shotgun_reload == nil then
+		self._use_shotgun_reload = self._use_shotgun_reload or self._use_shotgun_reload == nil
+	else
+		self._use_shotgun_reload = tweak_data.weapon[self._name_id].use_shotgun_reload
+	end
+
+	self._hip_fire_rate_inc = managers.player:upgrade_value("shotgun", "hip_rate_of_fire", 0)
+end
+
 function ShotgunBase:get_damage_falloff(damage, col_ray, user_unit)
 	local distance = col_ray.distance or mvector3.distance(col_ray.unit:position(), user_unit:position())
 	local inc_range_mul = 1
