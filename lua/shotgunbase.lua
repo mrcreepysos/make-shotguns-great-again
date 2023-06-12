@@ -1,3 +1,9 @@
+-- update 237 try not to ruin things challenge
+Hooks:PostHook(ShotgunBase, "setup_default", "msga_setup_default", function(self)
+	self._damage_near = tweak_data.weapon[self._name_id].damage_near
+	self._damage_far = tweak_data.weapon[self._name_id].damage_far
+end)
+
 function ShotgunBase:get_damage_falloff(damage, col_ray, user_unit)
 	local distance = col_ray.distance or mvector3.distance(col_ray.unit:position(), user_unit:position())
 	local inc_range_mul = 1
