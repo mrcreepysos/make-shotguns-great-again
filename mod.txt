@@ -3,7 +3,7 @@
 	"description" : "unfuck shotguns, also revert drf",
 	"author" : "smiley's friend",
 	"contact" : "smfr#4414",
-	"version" : "1.0",
+	"version" : "1.1",
 	"blt_version" : 2,
 	"updates" : [{
 		"identifier" : "msga",
