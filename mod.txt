@@ -3,7 +3,7 @@
 	"description" : "unfuck shotguns, also revert drf",
 	"author" : "smiley's friend",
 	"contact" : "smfr#4414",
-	"version" : "1.2",
+	"version" : "1.2.1",
 	"blt_version" : 2,
 	"updates" : [{
 		"identifier" : "msga",
@@ -15,6 +15,7 @@
 		{"hook_id": "lib/units/weapons/newraycastweaponbase", "script_path": "lua/newraycastweaponbase.lua"},
 		{"hook_id": "lib/units/weapons/shotgun/shotgunbase", "script_path": "lua/shotgunbase.lua"},
 		{"hook_id": "lib/tweak_data/weapontweakdata", "script_path": "lua/weapontweakdata.lua"},
+		{"hook_id": "lib/tweak_data/firetweakdata", "script_path": "lua/firetweakdata.lua"},
 		{"hook_id": "lib/tweak_data/weaponfactorytweakdata", "script_path": "lua/weaponfactorytweakdata.lua"}
 	]
 }
